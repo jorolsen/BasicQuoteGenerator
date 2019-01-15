@@ -5,16 +5,25 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Basic Quote Generator</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="libaries/material-icons/material-icon.css">
     </head>
     <body>
         <main class="main">
             <section id="quote_field" class="quote-layout">
                 <video autoplay muted loop id="background_video" class="background-video">
-                    <source id="video_source" src="res/001.mp4" type="video/mp4">
+                    <source id="video_source" src="res/002.mp4" type="video/mp4">
                 </video>
+                <div class="overlay"></div>
+                <div class="settings-div" onclick="settings()">
+                    <i class="material-icons settings-icon">settings</i>
+                </div>
                 <div class="content">
                     <h1>Quote:</h1>
-                    <p>Lorem ipsum...</p>
+                    <p class="quote">Lorem ipsum...</p>
+                    <div class="buttons">
+                        <i class="material-icons arrow">arrow_left</i>
+                        <i class="material-icons arrow">arrow_right</i>
+                    </div>
                 </div>
             </section>
             <footer id="footer" class="footer">

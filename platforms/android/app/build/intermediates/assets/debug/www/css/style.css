@@ -1,0 +1,69 @@
+body {
+    background-color: #2a2a2a;
+    overflow-y: hidden;
+    user-select: none;
+}
+.main {
+    text-align: center;
+}
+.background-video {
+    z-index: 1;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0,0,0,0.5); */
+    width: 100%;
+
+}
+.overlay {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.content {
+    margin: auto;
+    z-index: 3;
+    display: block;
+    position: absolute;
+    color: #F1F1F1;
+    width: 50%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+.quote {
+    user-select: text !important;
+}
+.buttons {
+    margin: 0 auto;
+}
+.arrow {
+    font-size: 300px !important;
+    user-select: text;
+}
+.right-arrow {
+    display: inline-block;
+}
+.settings-div {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 5;
+    left: 5;
+}
+@keyframes spin {
+    100% { transform: rotate(360deg) };
+}
+.settings-icon {
+    font-size: 300% !important;
+    color: rgba(255,255,255,0.5);
+    animation: spin 25s linear infinite;
+}
