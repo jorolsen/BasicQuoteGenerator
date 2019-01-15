@@ -1,0 +1,15 @@
+{
+  "name": "com.cosoftlabs.basicquotegen",
+  "version": "1.0.0",
+  "displayName": "Basic Quote Generator",
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "~7.1.4",
+    "cordova-browser": "^5.0.4"
+  }
+}

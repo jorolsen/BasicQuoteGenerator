@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Basic Quote Generator",
+  "short_name": "Basic Quote Generator",
+  "version": "com.cosoftlabs.basicquotegen",
+  "description": "A basic quote generator.",
+  "author": "LucasGI",
+  "icons": [],
+  "start_url": "index.html"
+}

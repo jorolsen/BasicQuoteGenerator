@@ -1,0 +1,29 @@
+body {
+    background-color: yellow;
+}
+.background-video {
+    z-index: 1;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+
+}
+.content {
+    margin: auto;
+    z-index: 2;
+    display: block;
+    position: absolute;
+    color: #F1F1F1;
+    width: 50%;
+    padding: 20px;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

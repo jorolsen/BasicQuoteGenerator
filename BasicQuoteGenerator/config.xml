@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.cosoftlabs.basicquotegen" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Basic Quote Generator</name>
+    <description>
+        A basic quote generator.
+    </description>
+    <author email="jordan.olsen@cosoftstudios.com" href="">
+        LucasGI
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <engine name="android" spec="~7.1.4" />
+    <engine name="browser" spec="^5.0.4" />
+</widget>
