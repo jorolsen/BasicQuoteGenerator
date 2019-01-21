@@ -1,10 +1,31 @@
+/* font-family: 'Charm', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Coiny', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Gochi Hand', cursive; */
+@font-face {
+    font-family: 'Gochi Hand';
+    font-style: cursive;
+    src: url(../res/fonts/Gochi_Hand/GochiHand-Regular.ttf) format('woff2');
+  }
+  @font-face {
+    font-family: 'Indie Flower';
+    font-style: cursive;
+    src: url(../res/fonts/Indie_Flower/IndieFlower.ttf) format('woff2');
+  }
 body {
-    background-color: #2a2a2a;
+    background-color: #000000;
     overflow-y: hidden;
     user-select: none;
 }
 .main {
     text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.quote-field {
+    width: 100%;
+    height: 100%;
 }
 .background-video {
     z-index: 1;
@@ -17,6 +38,19 @@ body {
     width: 100%;
 
 }
+.splash-overlay {
+    z-index: 14;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,1);
+    display: block;
+}
+@keyframes overlay {
+    100% { display: hidden; };
+}
 .overlay {
     z-index: 2;
     position: fixed;
@@ -24,7 +58,7 @@ body {
     top: 0;
     min-height: 100%;
     min-width: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
 }
 .content {
     margin: auto;
@@ -32,26 +66,47 @@ body {
     display: block;
     position: absolute;
     color: #F1F1F1;
-    width: 50%;
-    max-height: 80%;
+    width: 85%;
+    max-height: 70%;
     padding: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -90%);
  
+}
+.header {
+    font-size: 250%;
 }
 .quote {
     user-select: text !important;
+    font-size: 5vmin;
+    font-family: 'Indie Flower';
+}
+.name {
+    margin-top: -10px;
+    margin-bottom: 10%;
 }
 .buttons {
     margin: 0 auto;
+
 }
 .arrow {
-    font-size: 300px !important;
-    user-select: text;
+    z-index: 5;
+    display: block;
+    width: 40vmin;
+    position: fixed;
+    bottom: 150;
+}
+.left-arrow {
+    /* transform: translate(20%, 275%) scaleX(-1)!important; */
+    transform: translate(8vmin, 60vmax) scaleX(-1)!important;
+    left: 0;
+    padding-left: 40px;
 }
 .right-arrow {
-    display: inline-block;
+    right: 0;
+    padding-left: 40px;
+    transform: translate(-8vmin, 60vmax);
 }
 .settings-div {
     z-index: 4;
@@ -59,12 +114,112 @@ body {
     position: absolute;
     top: 5;
     left: 5;
+    /* border: 2px solid blue; */
 }
 @keyframes spin {
     100% { transform: rotate(360deg) };
 }
 .settings-icon {
     font-size: 300% !important;
-    color: rgba(255,255,255,0.5);
-    animation: spin 25s linear infinite;
+    color: rgba(255,255,255,0.3);
+    animation: spin 35s linear infinite;
 }
+.dislike-div {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 50;
+    right: 0;
+    transform: translate(-2vmin, 0%);
+    /* border: 2px solid red; */
+}
+.dislike-icon {
+    font-size: 300% !important;
+    color: rgba(133, 0, 0, 0.705);
+}
+.settings-modal {
+    display: none;
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto !important;
+    background-color: rgba(0,0,0,0.5)
+}
+.modal-content {
+    background-color: rgba(0,0,0,0.2) !important;
+    margin: 15% auto !important;
+    padding: 0px !important;
+    border: 1px solid #888;
+    width: 90% !important;
+}
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgba(27, 27, 27, 0.9);
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    color: white;
+    padding: 2px 16px;
+    background-color: rgba(27,27,27,0.7);
+}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: rgba(27,27,27,0.9);
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgba(0,0,0,0);
+    color: #f1f1f1;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover, .collapsible:active {
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsible-content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

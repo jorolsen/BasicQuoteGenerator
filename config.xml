@@ -9,6 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <platform name="android">
+        <icon density="mdpi" src="www/res/ic_launcher/res/mdpi.png" />
+        <icon density="hdpi" src="www/res/ic_launcher/res/hdpi.png" />
+        <icon density="xhdpi" src="www/res/ic_launcher/res/xhdpi.png" />
+        <icon density="xxhdpi" src="www/res/ic_launcher/res/xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/res/ic_launcher/res/xxxhdpi.png" />
+    </platform>
     <engine name="android" spec="~7.1.4" />
     <engine name="browser" spec="^5.0.4" />
 </widget>

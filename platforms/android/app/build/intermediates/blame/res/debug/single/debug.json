@@ -28,10 +28,6 @@
         "source": "G:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
     },
     {
-        "merged": "G:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
-        "source": "G:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
-    },
-    {
         "merged": "G:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
         "source": "G:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
     },
