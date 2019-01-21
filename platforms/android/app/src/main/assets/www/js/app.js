@@ -27,7 +27,9 @@ $(document).ready(function () {
     // this allows the user to add/remove quotes and save those settings for future launches
     if (isFirstLaunch()) {
         quoteSourceJSON = JSON.stringify(quoteDatabase);
+        var dislikedJSON = JSON.stringify(dislikedPlaceholder);
         localStorage.setItem("quoteJSON", quoteSourceJSON);
+        localStorage.setItem("disliked", dislikedJSON);
         quoteSource = quoteDatabase;
         setFirstLaunch();
     } else {
@@ -40,13 +42,13 @@ $(document).ready(function () {
     sourceLength = quoteSource.length; // gets the array length from the default array
     randomNumber = Math.floor(Math.random() * sourceLength); // gets a random number to be used for random quote gen
     quoteContainer = $('#quote'); // grab the html quote container for reference
-    currentQuote = randomNumber; 
+    currentQuote = randomNumber;
     shownQuotes = [currentQuote]; // created the first element for the array to show history
 
     updateCurrentQuoteId();
     // set the first shown quote to a random quote from quoteJSON
     randomQuote();
-    
+
     console.log(quoteSource);
 });
 
@@ -93,7 +95,20 @@ function dislike() {
     // obj = JSON.parse(text);
     // console.log(obj);
     console.log(currentQuoteId);
-    confirm("Are you sure?");
+    if (currentQuoteId <= 56) {
+        if (confirm("Once this quote has been disliked it will no longer be shown in app or in notifications")) {
+            quoteSource.splice(quoteSource.indexOf(currentQuote.quote), 1)
+            nextQuote();
+            console.log(getCurrentQuoteId());
+        }
+    } else {
+        if (confirm("Disliking a custom quote will permatly remove it and cannot be undone.")) {
+            quoteSource.splice(quoteSource.indexOf(currentQuote.quote), 1)
+            nextQuote();
+            console.log(getCurrentQuoteId());
+        }
+    }
+
     console.log("Input Action: Dislike");
 }
 
@@ -109,9 +124,10 @@ function rightClick() {
 
 // grab a random quote and display it
 function randomQuote() {
-    newQuoteText = quoteSource[randomNumber].quote;  
+    newQuoteText = quoteSource[randomNumber].quote;
     newQuoteGenius = quoteSource[randomNumber].name;
     newQuoteId = quoteSource[randomNumber].id;
+    if ((newQuoteGenius === null) || (newQuoteGenius == "") || (newQuoteGenius == " ")) { newQuoteGenius = "Unknown" }
     quoteContainer.fadeOut(timeAnimationIn, function () {
         quoteContainer.html('');
         quoteContainer.append('<p class="quote">' + newQuoteText + '</p>' + '<p id="name" class="name">' + '-' + newQuoteGenius + '</p>');
@@ -132,6 +148,7 @@ function nextQuote() {
     newQuoteText = quoteSource[currentQuote].quote;
     newQuoteGenius = quoteSource[currentQuote].name;
     newQuoteId = quoteSource[currentQuote].id;
+    if ((newQuoteGenius === null) || (newQuoteGenius == "") || (newQuoteGenius == " ")) { newQuoteGenius = "Unknown" }
     quoteContainer.fadeOut(timeAnimationIn, function () {
         quoteContainer.html('');
         quoteContainer.append('<p class="quote">' + newQuoteText + '</p>' + '<p id="name" class="name">' + '-' + newQuoteGenius + '</p>');
@@ -151,6 +168,7 @@ function lastQuote() {
     newQuoteText = quoteSource[currentQuote].quote;
     newQuoteGenius = quoteSource[currentQuote].name;
     newQuoteId = quoteSource[currentQuote].id;
+    if ((newQuoteGenius === null) || (newQuoteGenius == "") || (newQuoteGenius == " ")) { newQuoteGenius = "Unknown" }
     quoteContainer.fadeOut(timeAnimationIn, function () {
         quoteContainer.html('');
         quoteContainer.append('<p class="quote">' + newQuoteText + '</p>' + '<p id="name" class="name">' + '-' + newQuoteGenius + '</p>');
@@ -159,9 +177,22 @@ function lastQuote() {
     updateCurrentQuoteId();
     console.log("called lastQuote");
 }
-
-// check if the next intended quote in the array has been disliked
-function chkIfDisliked(a) {
+function setQuote(a) {
+    currentQuote = a;
+    newQuoteText = quoteSource[currentQuote].quote;
+    newQuoteGenius = quoteSource[currentQuote].name;
+    newQuoteId = quoteSource[currentQuote].id;
+    if ((newQuoteGenius === null) || (newQuoteGenius == "") || (newQuoteGenius == " ")) { newQuoteGenius = "Unknown" }
+    quoteContainer.fadeOut(timeAnimationIn, function () {
+        quoteContainer.html('');
+        quoteContainer.append('<p class="quote">' + newQuoteText + '</p>' + '<p id="name" class="name">' + '-' + newQuoteGenius + '</p>');
+        quoteContainer.fadeIn(timeAnimationOut);
+    });
+    updateCurrentQuoteId();
+    console.log("called setQuote");
+}
+// check if the next intended quote is not disliked or diabled
+function chkIfValid() {
 
 }
 
@@ -171,36 +202,52 @@ function updateCurrentQuoteId() {
     console.log("Current position = " + currentPosition);
     currentQuoteId = quoteSource[currentQuote].id;
 }
-
+function copyQuote() {
+    const copy_text = document.querySelector('#quote, .quote');
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(copy_text)
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    selection.removeAllRanges();
+    toast("Quote copied to clipboard!", 'short', 'bottom')
+    console.log("Called copyQuote")
+}
+function toast(a,b,c) {
+    alert("Copied to clipboard");
+    console.log("Function:toast");
+}
 function getCurrentQuoteId() {
-    console.log("Current Quote ID = " + currentQuoteId);
-    console.log("Current position = " + currentPosition);
+    console.log("function:getCurrentQuoteId(); Current Quote ID = " + currentQuoteId);
+    console.log("function:getCurrentQuoteId(); Current position = " + currentPosition);
+    return (currentQuoteId);
 }
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
 }
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
 }

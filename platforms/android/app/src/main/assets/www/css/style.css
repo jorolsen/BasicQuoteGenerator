@@ -13,10 +13,37 @@ font-family: 'Gochi Hand', cursive; */
     font-style: cursive;
     src: url(../res/fonts/Indie_Flower/IndieFlower.ttf) format('woff2');
   }
+  @font-face {
+    font-family: 'Cinzel';
+    font-style: serif;
+    src: url(../res/fonts/Cinzel/Cinzel-Regular.ttf) format('woff2');
+  }
+  @font-face {
+    font-family: 'Cinzel';
+    font-style: bold;
+    src: url(../res/fonts/Cinzel/Cinzel-Bold.ttf) format('woff2');
+  }
+  @font-face {
+    font-family: 'Coiny';
+    font-style: cursive;
+    src: url(../res/fonts/Coiny/Coiny-Regular.ttf) format('woff2');
+  }
+  @font-face {
+    font-family: 'Charm';
+    font-style: cursive;
+    src: url(../res/fonts/Charm/Charm-Regular.ttf) format('woff2');
+  }
+  @font-face {
+    font-family: 'Charm';
+    font-style: bold;
+    src: url(../res/fonts/Charm/Charm-Bold.ttf) format('woff2');
+  }
+
 body {
     background-color: #000000;
     overflow-y: hidden;
     user-select: none;
+    font-family: 'charm', cursive;
 }
 .main {
     text-align: center;
@@ -80,11 +107,12 @@ body {
 .quote {
     user-select: text !important;
     font-size: 5vmin;
-    font-family: 'Indie Flower';
+    font-family: 'Indie Flower' !important;
 }
 .name {
     margin-top: -10px;
     margin-bottom: 10%;
+    font-size: 120%;
 }
 .buttons {
     margin: 0 auto;
@@ -158,23 +186,25 @@ body {
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: rgba(27, 27, 27, 0.9);
+    background-color: rgba(12, 12, 12, 0.9);
     color: white;
     border-radius: 20px 20px 0px 0px;
+    font-size: 130%;
   }
   
   /* Modal Body */
   .modal-body {
     color: white;
     padding: 2px 16px;
-    background-color: rgba(27,27,27,0.7);
+    background-color: rgba(12,12,12,0.7);
 }
   
   /* Modal Footer */
   .modal-footer {
     padding: 2px 16px;
-    background-color: rgba(27,27,27,0.9);
+    background-color: rgba(12,12,12,0.9);
     color: white;
+    font-size: 120%;
     border-radius: 0px 0px 20px 20px;
   }
   
@@ -189,7 +219,8 @@ body {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    overflow-y: auto !important;
   }
   
   /* Add Animation */
@@ -206,8 +237,10 @@ body {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 120%;
     text-transform: uppercase;
+    font-family: 'Gochi Hand', cursive;
+    border-bottom: 1px dotted white;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -218,7 +251,7 @@ body {
   /* Style the collapsible content. Note: hidden by default */
   .collapsible-content {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgba(6,6,6,0.8);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

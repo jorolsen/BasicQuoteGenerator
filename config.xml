@@ -16,6 +16,7 @@
         <icon density="xxhdpi" src="www/res/ic_launcher/res/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/res/ic_launcher/res/xxxhdpi.png" />
     </platform>
+    <plugin name="cordova-plugin-x-toast" spec="^2.7.2" />
     <engine name="android" spec="~7.1.4" />
     <engine name="browser" spec="^5.0.4" />
 </widget>

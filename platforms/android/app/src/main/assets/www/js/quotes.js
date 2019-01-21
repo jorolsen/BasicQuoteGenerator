@@ -1,4 +1,5 @@
 // max quote length: 370 char.
+var dislikedPlaceholder = [];
 var quoteDatabase=[
     {
         id: 1,
@@ -108,12 +109,12 @@ var quoteDatabase=[
     {
         id: 22,
         quote:"Think big and don't listen to people who tell you it can't be done. Life's too short to think small.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 23,
         quote:"Do one thing every day that scares you.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 24,
@@ -153,17 +154,17 @@ var quoteDatabase=[
     {
         id: 31,
         quote:"A comfort zone is a beautiful place, but nothing ever grows there.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 32,
         quote:"Happiness is found when you stop comparing yourself to other people.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 33,
         quote:"Sometimes the smallest step in the right direction ends up being the biggest step of your life. Tip toe if you must, but take the step.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 34,
@@ -178,7 +179,7 @@ var quoteDatabase=[
     {
         id: 36,
         quote:"The one who falls and gets up is so much stronger than the one who never fell.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 37,
@@ -188,7 +189,7 @@ var quoteDatabase=[
     {
         id: 38,
         quote:"F.E.A.R. has two meanings - Forget Everything And Run OR Face Everything And Rise. The choice is yours.",
-        name:"Unknown"
+        name:""
     },
     {
         id: 39,
