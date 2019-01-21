@@ -27,7 +27,9 @@ $(document).ready(function () {
     // this allows the user to add/remove quotes and save those settings for future launches
     if (isFirstLaunch()) {
         quoteSourceJSON = JSON.stringify(quoteDatabase);
+        var dislikedJSON = JSON.stringify(dislikedPlaceholder)
         localStorage.setItem("quoteJSON", quoteSourceJSON);
+        localStorage.setItem("disliked", dislikedJSON);
         quoteSource = quoteDatabase;
         setFirstLaunch();
     } else {

@@ -1,4 +1,5 @@
 // max quote length: 370 char.
+var dislikedPlaceholer = [];
 var quoteDatabase=[
     {
         id: 1,
