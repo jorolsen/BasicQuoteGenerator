@@ -7,5 +7,6 @@
   "description": "A basic quote generator.",
   "author": "LucasGI",
   "icons": [],
+  "orientation": "portrait",
   "start_url": "index.html"
 }

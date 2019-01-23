@@ -1,5 +1,13 @@
 // max quote length: 370 char.
 var dislikedPlaceholder = [];
+var defaultSettings = [
+    {
+        isTimerOn: false,
+        isStaticNotificationActive: false,
+        isNotificationActive: false,
+        defaultNotificationTime: 0,
+    },
+];
 var quoteDatabase=[
     {
         id: 1,

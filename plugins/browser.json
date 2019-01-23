@@ -9,7 +9,23 @@
   "installed_plugins": {
     "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.cosoftlabs.basicquotegen"
+    }
+  }
 }

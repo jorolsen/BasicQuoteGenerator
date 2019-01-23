@@ -12,7 +12,7 @@
 <body>
     <main class="main">
         <section id="quote_field" class="quote-layout">
-            <!-- <div class="splash-overlay"></div> -->
+            <div class="splash-overlay" id="splash_overlay"></div>
             <video autoplay muted loop id="background_video" class="background-video">
                 <source id="video_source" src="res/003.mp4" type="video/mp4">
             </video>
@@ -23,8 +23,10 @@
             <div class="dislike-div" onclick="dislike()">
                 <i class="material-icons dislike-icon">thumb_down</i>
             </div>
+            <div class="timer-div" onclick="toggleTimer()">
+                <i class="material-icons timer-icon pop" id="timer_icon">timer</i>
+            </div>
             <div class="content">
-                <!-- <h1 class="header">Quote:</h1> -->
                 <div id="quote" class="quoteContainer" onclick="copyQuote()">
                     <p class="quote">null
                     </p>
@@ -32,8 +34,11 @@
                 </div>
             </div>
             <div class="buttons">
-                <img onclick="leftClick()" draggable="false" class="left-arrow arrow" src="res/arrow.svg">
-                <img onclick="rightClick()" draggable="false" class="right-arrow arrow" src="res/arrow.svg">
+                <img onclick="lastQuote()" draggable="false" class="left-arrow arrow" src="res/arrow.svg">
+                <img onclick="nextQuote()" draggable="false" class="right-arrow arrow" src="res/arrow.svg">
+            </div>
+            <div id="toast" class="toast">
+                Test
             </div>
         </section>
         <section>
@@ -46,9 +51,15 @@
                     <div class="modal-body">
                         <button class="collapsible">Notifications</button>
                         <div class="collapsible-content">
+                            <button onclick="sendRandomQuote(returnSource)">Send Notification</button></br>
+                            <label for="static_notification">Enable Static Notification</label>
+                            <input type="checkbox" name="static-notification" id="static_notification" onchange="staticNotification()"></br>
+                        </div>
+                        <button class="collapsible">Custom Quotes</button>
+                        <div class="collapsible-content">
                             <p>Lorem ipsum...</p>
                         </div>
-                        <button class="collapsible">Add Quotes</button>
+                        <button class="collapsible">Disliked Quotes</button>
                         <div class="collapsible-content">
                             <p>Lorem ipsum...</p>
                         </div>
@@ -62,7 +73,9 @@
     </main>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="libaries/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="libaries/flipclock/flipclock.min.js"></script>
     <script type="text/javascript" src="js/quotes.js"></script>
+    <script type="text/javascript" src="js/notification-handler.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 

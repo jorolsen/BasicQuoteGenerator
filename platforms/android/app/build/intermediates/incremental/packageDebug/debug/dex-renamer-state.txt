@@ -1,4 +1,4 @@
-#Mon Jan 21 00:09:13 MST 2019
+#Wed Jan 23 11:53:05 MST 2019
 base.0=G\:\\CosoftLabs\\BasicQuoteGenerator\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
