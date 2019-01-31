@@ -36,3 +36,15 @@ function sendRandomQuote(a) {
         foreground: true
     });
 }
+
+function staticNotification() {
+    var a = document.getElementById("static_notification");
+    if (a.checked) {
+        if (confirm("Enabling this will make a static notification that will help keep the app running in the background.")){
+            a.checked = true;
+        } else {
+            a.checked = false;
+        }
+    } 
+
+}

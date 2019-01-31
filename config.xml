@@ -1,5 +1,4 @@
-<?xml version='0.6.' encoding='utf-8'?>
-<!-- verson: 6:notifications and background, 7:dislike feature, 8:custom quotes, 9: refactoring, 1.0.0: release -->
+<?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cosoftlabs.basicquotegen" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Basic Quote Generator</name>
     <description>

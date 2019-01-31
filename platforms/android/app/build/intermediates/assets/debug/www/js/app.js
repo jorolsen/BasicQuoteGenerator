@@ -22,7 +22,7 @@ var currentPosition = 0; // used for shownQuotes to manage history (feature may 
 var obj;
 var isTrue = 1;
 var disliked;
-var timerSetting = false;
+var allSettings;
 var settingsJSON;
 var isTimerActive;
 var intervalTime = 10000;
@@ -32,6 +32,7 @@ var dislikedLength;
 var returnedQuote;
 var returnedName;
 var returnedId ;
+var settingsFromJSON;
 var returnSource = [];
 
 
@@ -48,20 +49,20 @@ document.addEventListener("deviceready", function() {
         // cordova.plugins.backgroundMode.disableWebViewOptimizations(); 
         console.log("Background on");
      });
+     
+    }, false);
     
-}, false);
-
-// do when app has finished loading
-$(document).ready(function () {
-    // localStorage.clear()
-    console.log("Is this the first launch: " + isFirstLaunch());
-
-    // if this is the users first launch take default quotes and save them in local storage
-    // this allows the user to add/remove quotes and save those settings for future launches
-    if (isFirstLaunch()) {
-        quoteSourceJSON = JSON.stringify(quoteDatabase);
+    // do when app has finished loading
+    $(document).ready(function () {
+        // localStorage.clear()
+        console.log("Is this the first launch: " + isFirstLaunch());
+        
+        // if this is the users first launch take default quotes and save them in local storage
+        // this allows the user to add/remove quotes and save those settings for future launches
+        if (isFirstLaunch()) {
+            quoteSourceJSON = JSON.stringify(quoteDatabase);
         var dislikedJSON = JSON.stringify(dislikedPlaceholder);
-        settingsJSON = JSON.stringify(timerSetting);
+        settingsJSON = JSON.stringify(defaultSettings);
         localStorage.setItem("quoteJSON", quoteSourceJSON);
         localStorage.setItem("disliked", dislikedJSON);
         localStorage.setItem("settingsJSON", settingsJSON);
@@ -72,13 +73,16 @@ $(document).ready(function () {
         quoteJSON = JSON.parse(quoteFromJSON);
         quoteSource = quoteJSON;
     }
-
-
+    
+    settingsFromJSON = localStorage.getItem("settingsJSON");
+    allSettings = JSON.parse(settingsFromJSON);
+    console.log("settingsJSON: " + allSettings);
+    
+    
     // set all needed variables to be reused
     sourceLength = quoteSource.length; // gets the array length from the default array
-
-    timerSettings = localStorage.getItem("settingsJSON", timerSetting);
-    isTimerActive = JSON.parse(timerSettings);
+    
+    isTimerActive = allSettings[0].isTimerOn;
 
     console.log("Is timer active? " + isTimerActive);
     if (isTimerActive) {
@@ -156,11 +160,14 @@ function updateSettings() {
 }
 
 function toggleTimer() {
+    var timerSetting;
     if (isTimerActive) {
         isTimerActive = false;
         timerIcon.style.color = "rgba(56, 56, 56, 0.7)"
-        timerSetting = JSON.stringify(isTimerActive);
-        localStorage.setItem("settingsJSON", timerSetting);
+        allSettings[0] ["isTimerOn"] = isTimerActive;
+        timerSetting = allSettings[0].isTimerOn;
+        settingsJSON = JSON.stringify(timerSetting);
+        localStorage.setItem("settingsJSON", settingsJSON);
         clearInterval(timerInterval);
         console.log("toggleTimer() Disabled timer");
         console.warn(timerInterval);
@@ -168,8 +175,10 @@ function toggleTimer() {
     } else {
         isTimerActive = true;
         timerIcon.style.color = "rgba(0, 133, 7, 0.7)"
-        timerSetting = JSON.stringify(isTimerActive);
-        localStorage.setItem("settingsJSON", timerSetting);
+        allSettings[0] ["isTimerOn"] = isTimerActive;
+        timerSetting = allSettings[0].isTimerOn;
+        settingsJSON = JSON.stringify(timerSetting);
+        localStorage.setItem("settingsJSON", settingsJSON);
         clearInterval(timerInterval);
         timerInterval = setInterval(function () { randomTimer(); }, intervalTime);
         console.log("toggleTimer() Timer enabled")
