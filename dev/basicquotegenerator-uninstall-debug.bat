@@ -1,2 +1,2 @@
-adb uninstall com.cosoftlabs.basicquotegen
+adb uninstall com.gamerriotz.basicquotegen
 pause

@@ -1,68 +1,68 @@
 -- Merging decision tree log ---
 provider#de.appplant.cordova.plugin.notification.util.AssetProvider
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:9-14:20
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:9-14:20
 	android:grantUriPermissions
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
 	android:authorities
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
 	android:exported
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:127-200
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:12:127-200
 manifest
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\b392c2ca4058b1a1244d9b8e63e9c555\AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:17:1-31:12
-MERGED from [:CordovaLib] C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [:CordovaLib] G:\CosoftLabs\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\f46e6dcf9efbc0873ea9d0992944557a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\91bdde06fa58fd43352971cef597d1a3\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\a0e6d31ca23c659a9c43ef413a06dc90\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\ed350996505312532b57a7751fad7d9c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1bc67af07fb5820d5fbb9dd7569ba5dc\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c89d2900bc3837cb921aa74df8c51733\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:102-140
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:102-140
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
 	android:hardwareAccelerated
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:141-199
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:141-199
 	android:versionCode
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
 supports-screens
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
 	android:largeScreens
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
 	android:smallScreens
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
 	android:normalScreens
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
 	android:xlargeScreens
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
 	android:resizeable
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
 	android:anyDensity
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:5-19:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\f46e6dcf9efbc0873ea9d0992944557a\AndroidManifest.xml:25:5-29:19
@@ -78,76 +78,76 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jgols\.gradle\c
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c89d2900bc3837cb921aa74df8c51733\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c89d2900bc3837cb921aa74df8c51733\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:81-113
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:81-113
 	android:hardwareAccelerated
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
 	android:icon
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
-activity#com.cosoftlabs.basicquotegen.MainActivity
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
+activity#com.gamerriotz.basicquotegen.MainActivity
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
 	android:screenOrientation
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:199-235
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:199-235
 	android:label
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
 	android:launchMode
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:135-170
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:135-170
 	android:windowSoftInputMode
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:299-341
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:299-341
 	android:configChanges
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
 	android:theme
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:236-298
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:236-298
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:171-198
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:6:171-198
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
 	android:label
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
 action#android.intent.action.MAIN
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
 receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:9-122
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:9-122
 	android:exported
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:19-43
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:19-43
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:44-119
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:15:44-119
 receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:9-120
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:9-120
 	android:exported
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:19-43
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:19-43
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:44-117
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:16:44-117
 activity#de.appplant.cordova.plugin.localnotification.ClickReceiver
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:9-205
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:9-205
 	android:launchMode
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:44-79
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:44-79
 	android:exported
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:19-43
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:19-43
 	android:theme
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:154-202
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:154-202
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:80-153
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:17:80-153
 service#de.appplant.cordova.plugin.background.ForegroundService
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:18:9-91
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:18:9-91
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:18:18-88
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:18:18-88
 uses-sdk
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\b392c2ca4058b1a1244d9b8e63e9c555\AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\b392c2ca4058b1a1244d9b8e63e9c555\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:21:5-23:54
-MERGED from [:CordovaLib] C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] G:\CosoftLabs\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] G:\CosoftLabs\BasicQuoteGenerator\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\f46e6dcf9efbc0873ea9d0992944557a\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\f46e6dcf9efbc0873ea9d0992944557a\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\91bdde06fa58fd43352971cef597d1a3\AndroidManifest.xml:21:5-23:60
@@ -160,25 +160,25 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jgols\.gradle\c
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1bc67af07fb5820d5fbb9dd7569ba5dc\AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c89d2900bc3837cb921aa74df8c51733\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c89d2900bc3837cb921aa74df8c51733\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
+INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:5-74
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a19f2e1e986444e7e726809d869abe6b\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:42-71
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:42-71
 	android:minSdkVersion
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:15-41
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:20:15-41
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:21:5-68
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:21:5-68
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:21:22-65
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:21:22-65
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:13-134
+ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:13-134
 	android:resource
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:75-131
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:75-131
 	android:name
-		ADDED from C:\Users\jgols\Desktop\Cosoft Studios\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
+		ADDED from G:\CosoftLabs\BasicQuoteGenerator\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
 uses-permission#com.sec.android.provider.badge.permission.READ
 ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\jgols\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\b392c2ca4058b1a1244d9b8e63e9c555\AndroidManifest.xml:19:5-86
 	android:name

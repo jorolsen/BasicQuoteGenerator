@@ -3,9 +3,9 @@
   "display": "standalone",
   "name": "Basic Quote Generator",
   "short_name": "Basic Quote Generator",
-  "version": "com.cosoftlabs.basicquotegen",
+  "version": "com.gamerriotz.basicquotegen",
   "description": "A basic quote generator.",
-  "author": "LucasGI",
+  "author": "GamerRiotz",
   "icons": [],
   "orientation": "portrait",
   "start_url": "index.html"

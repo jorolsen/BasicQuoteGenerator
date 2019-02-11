@@ -1,4 +1,4 @@
-com.cosoftlabs.basicquotegen
+com.gamerriotz.basicquotegen
 int attr font 0x7f010000
 int attr fontProviderAuthority 0x7f010001
 int attr fontProviderCerts 0x7f010002

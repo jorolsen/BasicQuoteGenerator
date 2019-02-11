@@ -14,21 +14,6 @@
                     }
                 }
             ]
-        },
-        {
-            "outputFile": "C:\\Users\\jgols\\Desktop\\Cosoft Studios\\BasicQuoteGenerator\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\jgols\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\1bc67af07fb5820d5fbb9dd7569ba5dc\\res\\values-zh-rHK\\values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "101",
-                        "endOffsets": "152"
-                    }
-                }
-            ]
         }
     ]
 }

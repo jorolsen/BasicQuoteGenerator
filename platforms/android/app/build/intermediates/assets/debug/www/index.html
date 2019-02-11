@@ -55,11 +55,11 @@
                             <label for="static_notification">Enable Static Notification</label>
                             <input type="checkbox" name="static-notification" id="static_notification" onchange="staticNotification()"></br>
                         </div>
-                        <button class="collapsible">Custom Quotes</button>
+                        <button class="collapsible" onclick="customQuotes()">Custom Quotes</button>
                         <div class="collapsible-content">
                             <p>Lorem ipsum...</p>
                         </div>
-                        <button class="collapsible">Disliked Quotes</button>
+                        <button class="collapsible" onclick="dislikedQuotes()">Disliked Quotes</button>
                         <div class="collapsible-content">
                             <p>Lorem ipsum...</p>
                         </div>
@@ -70,6 +70,32 @@
                 </div>
             </div>
         </section>
+        <section id="quotes_activity" class="quotes-activity">
+            <div id="header" class="activity-nav">
+                <i class="material-icons back-button" onclick="backToIndex()">arrow_back</i>
+                <p class='quote-title'>QUOTES</p>
+            </div>
+            <div id="quote-list" class="quote-list">
+                <ul class="item-list-ul">
+                    <li class="item-list-li">
+                        <i class="material-icons list-item-icon">edit</i>
+                        <p class="list-item-text"> Quote Text...</p>
+                    </li>
+                    <li class="item-list-li">
+                        <i class="material-icons list-item-icon">edit</i>
+                        <p class="list-item-text"> Quote Text...</p>
+                    </li>
+                    <li class="item-list-li">
+                        <i class="material-icons list-item-icon">edit</i>
+                        <p class="list-item-text"> Quote Text...</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="add-button">
+                <i class="material-icons add-button-plus">add_circle</i>
+            </div>
+        </section>
     </main>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="libaries/jQuery/jquery-3.3.1.min.js"></script>
@@ -77,6 +103,7 @@
     <script type="text/javascript" src="js/quotes.js"></script>
     <script type="text/javascript" src="js/notification-handler.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/quote-handler.js"></script>
 </body>
 
 </html>

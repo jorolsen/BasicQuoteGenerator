@@ -31,12 +31,23 @@ var dislikedSource;
 var dislikedLength;
 var returnedQuote;
 var returnedName;
-var returnedId ;
+var returnedId;
 var settingsFromJSON;
 var returnSource = [];
 
+/* ****************************************************************************************
+// ****************************************************************************************
+// ****************************************************************************************
+//
+// START OF DOCUMENT, THIS HANDLES ALL SCRIPTING FOR THE APP
+// EVENT LISTENER, DEVICEREADY HANDLES PLUGINS AND OTHER CORDOVA RELATED FEATURES.
+// ALL OTHER COMMANDS TO EXECUTE WHEN THE APP IS LOADED IS IN DOCUMENTREADY
+//
+// ****************************************************************************************
+// ****************************************************************************************
+/ *************************************************************************************** */
 
-document.addEventListener("deviceready", function() {
+document.addEventListener("deviceready", function () {
     // notificationHandler();
     sceduleQuote();
     cordova.plugins.backgroundMode.setEnabled(true);
@@ -45,22 +56,28 @@ document.addEventListener("deviceready", function() {
     // }, 1000);
     cordova.plugins.backgroundMode.overrideBackButton();
     cordova.plugins.backgroundMode.setDefaults({ silent: true });
-    cordova.plugins.backgroundMode.on('activate', function() {
+    cordova.plugins.backgroundMode.on('activate', function () {
         // cordova.plugins.backgroundMode.disableWebViewOptimizations(); 
         console.log("Background on");
-     });
-     
-    }, false);
-    
-    // do when app has finished loading
-    $(document).ready(function () {
-        // localStorage.clear()
-        console.log("Is this the first launch: " + isFirstLaunch());
-        
-        // if this is the users first launch take default quotes and save them in local storage
-        // this allows the user to add/remove quotes and save those settings for future launches
-        if (isFirstLaunch()) {
-            quoteSourceJSON = JSON.stringify(quoteDatabase);
+    });
+
+}, false);
+
+/* ****************************************************************************************
+// ****************************************************************************************
+//
+// EXECUTE WHEN DOCUMENT IS READY
+//
+// ****************************************************************************************
+**************************************************************************************** */
+$(document).ready(function () {
+    // localStorage.clear()
+    console.log("Is this the first launch: " + isFirstLaunch());
+
+    // if this is the users first launch take default quotes and save them in local storage
+    // this allows the user to add/remove quotes and save those settings for future launches
+    if (isFirstLaunch()) {
+        quoteSourceJSON = JSON.stringify(quoteDatabase);
         var dislikedJSON = JSON.stringify(dislikedPlaceholder);
         settingsJSON = JSON.stringify(defaultSettings);
         localStorage.setItem("quoteJSON", quoteSourceJSON);
@@ -73,16 +90,16 @@ document.addEventListener("deviceready", function() {
         quoteJSON = JSON.parse(quoteFromJSON);
         quoteSource = quoteJSON;
     }
-    
+
     settingsFromJSON = localStorage.getItem("settingsJSON");
     allSettings = JSON.parse(settingsFromJSON);
     console.log("settingsJSON: " + allSettings);
-    
-    
+
+
     // set all needed variables to be reused
     sourceLength = quoteSource.length; // gets the array length from the default array
-    
-    isTimerActive = allSettings[0].isTimerOn;
+
+    isTimerActive = allSettings.isTimerOn;
 
     console.log("Is timer active? " + isTimerActive);
     if (isTimerActive) {
@@ -99,22 +116,14 @@ document.addEventListener("deviceready", function() {
     clearInterval(timerInterval);
     timerInterval = setInterval(function () { randomTimer(); }, intervalTime);
     clearInterval(23);
+    clearInterval(24);
     clearInterval(26);
     clearInterval(28);
-    // clearInterval(randomTimer());
-
-    // timerInterval = setInterval(function () {
-    //     console.warn(timerInterval);
-    //     if (isTimerActive) {
-    //         randomQuote();
-    //     }
-    // }, intervalTime);
-    // console.log(quoteSource);
 });
 
 
 function randomTimer() {
-    console.warn(timerInterval);
+    console.warn("Current Timer Id: " + timerInterval);
     if (isTimerActive) {
         randomQuote();
     }
@@ -129,7 +138,6 @@ function isFirstLaunch() {
     if (chkObj == isTrue) {
         return false;
     } else {
-        // localStorage.setItem("isFirstLaunch", isTrue);
         return true;
     }
 }
@@ -159,32 +167,29 @@ function updateSettings() {
 
 }
 
+
+/* ****************************************************************************************
+// TOGGLE THE TIMER TO ENABLE/DISABLE AND SAVE THE SETTING IN LOCALSTORAGE
+**************************************************************************************** */
 function toggleTimer() {
-    var timerSetting;
     if (isTimerActive) {
         isTimerActive = false;
         timerIcon.style.color = "rgba(56, 56, 56, 0.7)"
-        allSettings[0] ["isTimerOn"] = isTimerActive;
-        timerSetting = allSettings[0].isTimerOn;
-        settingsJSON = JSON.stringify(timerSetting);
-        localStorage.setItem("settingsJSON", settingsJSON);
         clearInterval(timerInterval);
         console.log("toggleTimer() Disabled timer");
-        console.warn(timerInterval);
         toast("Timer disabled.", 600, 'bottom', 2500);
     } else {
         isTimerActive = true;
         timerIcon.style.color = "rgba(0, 133, 7, 0.7)"
-        allSettings[0] ["isTimerOn"] = isTimerActive;
-        timerSetting = allSettings[0].isTimerOn;
-        settingsJSON = JSON.stringify(timerSetting);
-        localStorage.setItem("settingsJSON", settingsJSON);
         clearInterval(timerInterval);
         timerInterval = setInterval(function () { randomTimer(); }, intervalTime);
         console.log("toggleTimer() Timer enabled")
-        console.warn(timerInterval);
         toast("Random timer enabled.", 600, 'bottom', 2500);
     }
+    console.warn("timerInterval change. New/current timer interval id: " + timerInterval);
+    allSettings.isTimerOn = isTimerActive;
+    settingsJSON = JSON.stringify(allSettings);
+    localStorage.setItem("settingsJSON", settingsJSON);
     timerIcon.classList.remove("pop");
     void timerIcon.offsetWidth;
     timerIcon.classList.add("pop")
@@ -230,7 +235,7 @@ function randomQuote() {
             name: returnedName,
         }
     ]
-    return(returnSource);
+    return (returnSource);
 }
 
 // takes the next quote after the current shown quote and displays it
@@ -304,10 +309,11 @@ function copyQuote() {
     console.log("Called copyQuote")
     console.log("----------");
 }
-
+/* ****************************************************************************************
 // display a toast format:
 //  toast("message", animation time (int), postion ('bottom', 'middle', 'top', or a int ), show time (int));
 // example: toast("This is a two second message", 600, 'bottom', 2000);
+**************************************************************************************** */
 function toast(a, b, c, d) {
     if ((a == null) || (b == null) || (c == null) || (d == null)) {
         console.error("Function:toast Error: One or more perameters null");
@@ -370,14 +376,14 @@ for (i = 0; i < coll.length; i++) {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
-}
+// for (i = 0; i < coll.length; i++) {
+//     coll[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
+//         var content = this.nextElementSibling;
+//         if (content.style.maxHeight) {
+//             content.style.maxHeight = null;
+//         } else {
+//             content.style.maxHeight = content.scrollHeight + "px";
+//         }
+//     });
+// }
