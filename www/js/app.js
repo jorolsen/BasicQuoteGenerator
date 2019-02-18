@@ -123,8 +123,8 @@ $(document).ready(function () {
 
 
 function randomTimer() {
-    console.warn("Current Timer Id: " + timerInterval);
     if (isTimerActive) {
+        console.warn("Current Timer Id: " + timerInterval);
         randomQuote();
     }
 }

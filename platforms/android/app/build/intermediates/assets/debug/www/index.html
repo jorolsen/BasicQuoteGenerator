@@ -96,6 +96,19 @@
                 <i class="material-icons add-button-plus">add_circle</i>
             </div>
         </section>
+        <section id="edit_activity" class="edit-activity">
+            <div id="header" class="activity-nav">
+                <i class="material-icons back-button" onclick="backToList()">done</i>
+                <p class='edit-title'>EDIT QUOTE</p>
+                <i class="material-icons delete-button" onclick="deleteQuote()">delete_forever</i>
+            </div>
+            <div id="edit-field" class="edit-field">
+                <p class="char-counter" id="quote_area_counter">0/370</p>
+                <textarea class="edit-box" placeholder="Enter quote text here..." maxlength="370"></textarea>
+                <p class="char-counter" id="author_area_counter">0/70</p>
+                <textarea class="author-box" placeholder="Enter author of the quote here. Leave blank if unknown." maxlength="70"></textarea>
+            </div>
+        </section>
     </main>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="libaries/jQuery/jquery-3.3.1.min.js"></script>

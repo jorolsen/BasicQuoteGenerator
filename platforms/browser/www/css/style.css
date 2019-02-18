@@ -296,7 +296,7 @@ body {
     animation-duration: 0.4s;
     overflow-y: auto !important;
 }
-
+/* general styling for all activities */
 .activity-nav {
     z-index: 11;
     background-color: #121212;
@@ -310,6 +310,17 @@ body {
     box-shadow: 0px 4px 4px rgba(12,12,12,0.3);
     color: #F1F1F1 !important;
 }
+
+.delete-button {
+    position: fixed;
+    display: inline;
+    font-size: 200% !important;
+    right: 0;
+    top: 0;
+    transform: translate(-15%, 20%);
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .back-button {
     position: fixed;
     display: inline;
@@ -334,6 +345,9 @@ body {
 .add-button-plus {
     font-size: 400% !important;
 }
+
+/* Activity that displays a list of requested quotes */
+
 .quote-title {
     display: inline;
     font-size: 175%;
@@ -358,7 +372,7 @@ body {
     z-index: 11;
     text-align: left;
     width: 100%;
-    max-height: 100%;
+    max-height: 95%;
     overflow-y: auto !important;
 }
 
@@ -386,13 +400,66 @@ body {
 }
 .list-item-icon {
     display: inline;
-    font-size: 200% !important; 
+    font-size: 7vmin !important; 
     padding: 5px;
 }
 .list-item-text {
     display: inline;
-    font-size: 200%;
+    font-size: 7vmin;
 }
+
+/* Edit Activity */
+.edit-title {
+    display: inline;
+    font-size: 175%;
+}
+
+.edit-activity {
+    z-index: 15;
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.edit-field {
+    z-index: 16;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    /* background-color: green; */
+}
+.edit-box {
+    margin: 0 auto;
+    padding-top: 8px;
+    /* display: inherit; */
+    /* background-color: red; */
+    width: 100%;
+    height: 60%;
+    font-family: 'Gochi Hand';
+    font-size: 250%;
+    border-bottom: 2px dotted grey;
+}
+
+.author-box {
+    margin: 0 auto;
+    padding-top: 8px;
+    /* display: inherit; */
+    /* background-color: red; */
+    width: 100%;
+    max-height: 10%;
+    font-family: 'Gochi Hand';
+    font-size: 150%;
+    border-bottom: 2px dotted grey;
+}
+
 /* Add Animation */
 
 @keyframes animatetop {
